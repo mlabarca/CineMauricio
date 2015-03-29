@@ -1,4 +1,16 @@
 <%= form_for(@sala) do |f| %>
+	<!--This will show errors if no database save was done due to model validations -->
+  	<% if @sala.errors.any? %>
+    	<div id="error_explanation">
+      		<h2> La sala no se pudo salvar por que hubo <%= pluralize(@sala.errors.count, "error") %> </h2>
+      		<ul>
+      			<% @sala.errors.full_messages.each do |msg| %>
+        			<li><%= msg %></li>
+      			<% end %>
+      		</ul>
+    	</div>
+  	<% end %>
+
 	<div class="sala_number">
 		<%= f.label :sala_number %>
 		<%= f.number_field :sala_number, min:1  %>

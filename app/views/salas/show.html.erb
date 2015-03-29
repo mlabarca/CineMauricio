@@ -1,2 +1,27 @@
-<h1>Salas#show</h1>
-<p>Find me in app/views/salas/show.html.erb</p>
+<h1>Disposición Sala <%= @sala.sala_number %> </h1>
+
+<h2> La sala <%= @sala.sala_number %> tiene <%= @sala.seat_rows *  @sala.seat_columns %> asientos </h2>
+<p> Dispuestos en <%= @sala.seat_rows %> filas y <%= @sala.seat_columns %> columnas. 
+
+<br />
+<p> Posición de los asientos: </p>
+<table>
+	<th> </th>
+	<% for column in 1..@sala.seat_columns %>
+		<th>  <%= column %> </th>
+		
+	<% end %>
+	
+	<% for row in 1..@sala.seat_rows %>
+	<tr>
+		<td style="font-weight: bold"> <%= row %> </td>
+		<% for column in 1..@sala.seat_columns %>
+			<td> <%= (row - 1)  * @sala.seat_columns +  column %> </td>
+		<% end %>
+	</tr>	
+	<% end %>
+	
+</table>
+
+<br />
+<%= link_to 'Regresar', salas_path %>
