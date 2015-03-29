@@ -1,0 +1,22 @@
+<%= form_for(@sala) do |f| %>
+	<div class="sala_number">
+		<%= f.label :sala_number %>
+		<%= f.number_field :sala_number, min:1  %>
+	</div>
+	
+	<div class="sala_rows">
+		<%= f.label :seat_rows %>
+		<%= f.number_field :seat_rows, min:1 %>
+	</div>
+	
+	<div class="sala_columns"> 
+		<%= f.label :seat_columns %>
+		<%= f.number_field :seat_columns, min:1 %>
+	</div>
+	
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+	
+<% end %>
+	

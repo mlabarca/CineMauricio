@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   
   root 'salas#index'
-  get 'salas/index'
-
-  get 'salas/new'
-
-  get 'salas/edit'
+  resources :salas
+  get 'salas/:id/delete' => 'salas#delete', :as => :salas_delete
+  
+  #get 'salas/index'
+  
+  #get 'salas/new'
+  
+  #get 'salas/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
