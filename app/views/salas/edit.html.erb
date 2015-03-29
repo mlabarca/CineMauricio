@@ -1,2 +1,5 @@
-<h1>Salas#edit</h1>
-<p>Find me in app/views/salas/edit.html.erb</p>
+<h1>Editar Sala <%= @sala.sala_number %></h1>
+
+<%= render 'form'%>
+
+<%= link_to 'Regresar', salas_path %>

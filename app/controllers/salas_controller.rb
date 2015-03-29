@@ -26,6 +26,23 @@ class SalasController < ApplicationController
     @sala = Sala.find(params[:id])
   end
   
+  def update
+    @sala = Sala.find(params[:id])
+    if @sala.update_attributes(sala_params)
+      redirect_to(:action => 'show', :id => @sala.id)
+    else
+      render('index')
+    end
+  end
+  
+  def delete
+    @sala = Sala.find(params[:id])
+  end
+  
+  def destroy
+    Sala.find(params[:id]).destroy
+    redirect_to(:action => 'index')
+  end
   
   
   # params list to be reused. Declared private for security
