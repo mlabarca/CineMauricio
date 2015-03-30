@@ -1,14 +1,13 @@
-== README CINEMAURICIO
-Tarea prpuesta como prueba para práctica en LITS, Santiago, Chile, 2015.
+== README - CINEMAURICIO
+Tarea propuesta como prueba para práctica en LITS, Santiago, Chile, 2015.
 
 [Escenario] Un cine necesita desplegar el formato de sus salas para poder  seleccionar asientos (con su ubicación específica). 
 
-[Problema] todas sus salas son distintas, por lo que se necesita una forma flexible de  guardar la configuración de cada una, para poder desplegarla.   Tarea: se pide crear un modelo que pueda guardar la posición exacta de cada  asiento, en cada sala, y un backend para crear las salas y sus respectivos asientos,  todo esto en Ruby on Rails, y compartir código en Github.  
+[Problema] Todas sus salas son distintas, por lo que se necesita una forma flexible de  guardar la configuración de cada una, para poder desplegarla.   Tarea: se pide crear un modelo que pueda guardar la posición exacta de cada  asiento, en cada sala, y un backend para crear las salas y sus respectivos asientos,  todo esto en Ruby on Rails, y compartir código en Github.  
 
 [Hint] Puedes considerar la planta de una sala como una matriz de coordenadas.    
 
-[Bonus] imagina que el cine necesita desplegar la configuración de sus salas en una 
-aplicación de escritorio. Para ello, se necesita obtener la información a través de una  API. Crea entonces un endpoint o ruta que recibiendo el id de una sala, retorne un  JSON con todos los asientos de la sala y su posición.    
+[Bonus] Imagina que el cine necesita desplegar la configuración de sus salas en una aplicación de escritorio. Para ello, se necesita obtener la información a través de una  API. Crea entonces un endpoint o ruta que recibiendo el id de una sala, retorne un  JSON con todos los asientos de la sala y su posición.    
 
-[Consideraciones] para simplificar la tarea, y que no te tome demasiado tiempo:  • Considera sólo los modelos solicitados, no consideres otros como Cine, lo que  se pide es un MVP enfocado sólo en el modelo importante que permitirá  guardar y entregar la configuración.
+[Consideraciones] Para simplificar la tarea, y que no te tome demasiado tiempo:  • Considera sólo los modelos solicitados, no consideres otros como Cine, lo que  se pide es un MVP enfocado sólo en el modelo importante que permitirá  guardar y entregar la configuración.
 
