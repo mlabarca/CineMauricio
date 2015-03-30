@@ -12,7 +12,8 @@ class SalasController < ApplicationController
     @sala = Sala.new
   end
   
-  # Executes when we submit the form in the "new" view
+  # Executes when we submit the form in the "new" view.
+  # renders new again if saving fails, for example in a validation issue
   def create
     @sala = Sala.new(sala_params)
     if @sala.save
@@ -26,12 +27,14 @@ class SalasController < ApplicationController
     @sala = Sala.find(params[:id])
   end
   
+  # Executes when we submit the form in the "edit" view.
+  # renders edit again if saving fails, for example in a validation issue.
   def update
     @sala = Sala.find(params[:id])
     if @sala.update_attributes(sala_params)
       redirect_to(:action => 'show', :id => @sala.id)
     else
-      render('index')
+      render('edit')
     end
   end
   
