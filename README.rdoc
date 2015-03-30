@@ -1,28 +1,14 @@
-== README
+== README CINEMAURICIO
+Tarea prpuesta como prueba para práctica en LITS, Santiago, Chile, 2015.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Escenario] Un cine necesita desplegar el formato de sus salas para poder  seleccionar asientos (con su ubicación específica). 
 
-Things you may want to cover:
+[Problema] todas sus salas son distintas, por lo que se necesita una forma flexible de  guardar la configuración de cada una, para poder desplegarla.   Tarea: se pide crear un modelo que pueda guardar la posición exacta de cada  asiento, en cada sala, y un backend para crear las salas y sus respectivos asientos,  todo esto en Ruby on Rails, y compartir código en Github.  
 
-* Ruby version
+[Hint] Puedes considerar la planta de una sala como una matriz de coordenadas.    
 
-* System dependencies
+[Bonus] imagina que el cine necesita desplegar la configuración de sus salas en una 
+aplicación de escritorio. Para ello, se necesita obtener la información a través de una  API. Crea entonces un endpoint o ruta que recibiendo el id de una sala, retorne un  JSON con todos los asientos de la sala y su posición.    
 
-* Configuration
+[Consideraciones] para simplificar la tarea, y que no te tome demasiado tiempo:  • Considera sólo los modelos solicitados, no consideres otros como Cine, lo que  se pide es un MVP enfocado sólo en el modelo importante que permitirá  guardar y entregar la configuración.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
