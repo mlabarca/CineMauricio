@@ -1,4 +1,5 @@
 <h1>Borrar Sala <%= @sala.sala_number %></h1>
 
-<%= button_to 'Borrar', @sala, :method => :delete , data: { confirm: 'seguro?' } %>
+<%= button_to 'Borrar', @sala, :method => :delete , data: { confirm: 'Está seguro de borrar esta sala?' } %>
+<br />
 <%= button_to 'Regresar', salas_path, :method => :get %>

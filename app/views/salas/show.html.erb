@@ -5,7 +5,7 @@
 
 <br />
 <p> Posición de los asientos: </p>
-<table>
+<table class="table">
 	<th> </th>
 	<% for column in 1..@sala.seat_columns %>
 		<th>  <%= column %> </th>
@@ -24,4 +24,4 @@
 </table>
 
 <br />
-<%= link_to 'Regresar', salas_path %>
+<%= link_to 'Regresar', salas_path, class: 'btn btn-success' %>
